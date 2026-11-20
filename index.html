@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Qian Zhang's research in operations management, performance measurement and quantitative evaluation, with two interactive AI evaluation prototypes.">
+  <title>Qian Zhang | Research</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="mast">
+    <a class="signature" href="./index.html">Qian Zhang</a>
+    <nav aria-label="Main navigation"><a href="#publication">Publication</a><a href="#projects">AI projects</a><a href="https://orcid.org/0000-0002-1325-6748">ORCID <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="name">
+      <div class="bio">
+        <p class="kicker">Operations management</p>
+        <h1 id="name">Qian Zhang</h1>
+        <p class="role">Assistant Professor at Southern Utah University</p>
+        <p class="intro">Qian studies how the choice of measures changes the way we rank organizations. Her work combines mathematical optimization with data on operational and financial performance.</p>
+        <a class="inline-link" href="https://scholar.google.com/citations?user=BfCJcC0AAAAJ&amp;hl=en">Publications on Google Scholar <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="figure">
+        <figcaption><span class="kicker">From the research demo</span><h2>When the ranking reverses</h2></figcaption>
+        <p class="chart-context">Graduate admission rates, UC Berkeley, 1973</p>
+        <fieldset class="switch">
+          <legend>Choose the departments included</legend>
+          <label><input type="radio" name="sample" value="all" checked><span>All six departments</span></label>
+          <label><input type="radio" name="sample" value="A"><span>Department A</span></label>
+        </fieldset>
+        <div class="data" aria-live="polite" aria-atomic="true">
+          <div class="row"><div><span>Male applicants</span><strong id="male-rate">44.5%</strong></div><div class="track" aria-hidden="true"><i id="male-bar" style="width:44.5%"></i></div><small id="male-count">1,198 of 2,691 admitted</small></div>
+          <div class="row"><div><span>Female applicants</span><strong id="female-rate">30.4%</strong></div><div class="track" aria-hidden="true"><i id="female-bar" style="width:30.4%"></i></div><small id="female-count">557 of 1,835 admitted</small></div>
+        </div>
+        <a class="inline-link" href="reproduction/index.html">Inspect the underlying counts <span aria-hidden="true">→</span></a>
+      </figure>
+    </section>
+    <section class="feature" id="publication" aria-labelledby="pub-heading">
+      <div><p class="kicker">Selected publication</p><p class="journal">Decision Sciences · 2021<br> First author</p></div>
+      <div><h2 id="pub-heading"><a href="https://doi.org/10.1111/deci.12363">Using Operational and Stock Analytics to Measure Airline Performance: A Network DEA Approach</a></h2>
+        <p>Qian and her coauthors studied nine international airlines over 2006–2016. Low-cost carriers generally scored higher on operational measures, while full-service carriers scored higher on stock market indicators.</p>
+        <a class="inline-link" href="https://doi.org/10.1111/deci.12363">Read the paper <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="projects" id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">AI evaluation projects</h2>
+      <p class="credit">AI assistants built these prototypes and ran the recorded model trials. Qian’s independent faculty evaluation is pending.</p>
+      <div class="cards">
+        <article><p class="kicker">Grading reliability</p><h3>Can a grader spot an error and still award full credit?</h3><p>Inspect a synthetic inventory solution and compare two Claude grading runs. Both flagged the same multiplication error and awarded full credit.</p><a class="inline-link" href="grading/index.html">Explore the grading demo <span aria-hidden="true">→</span></a></article>
+        <article><p class="kicker">Agent permissions &amp; evidence</p><h3>Can a research agent justify a ranking reversal?</h3><p>The agent can choose from two read-only queries. It diagnosed all three test cases correctly, but its query history supported only two diagnoses fully.</p><a class="inline-link" href="reproduction/index.html">Explore the research demo <span aria-hidden="true">→</span></a></article>
+      </div>
+    </section>
+  </main>
+  <footer><span>Qian (Victoria) Zhang</span><a href="https://orcid.org/0000-0002-1325-6748">ORCID 0000-0002-1325-6748</a></footer>
+  <script src="chart.js"></script>
+</body>
+</html>
